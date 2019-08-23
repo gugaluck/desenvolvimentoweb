@@ -3,7 +3,7 @@
 
 <table border=1>
     <tbody>
-        <form> 
+        <form>
             <div>
                 <td>
                     <label> Campo de Seleção: </label>
@@ -172,8 +172,9 @@
                     <br>
                     <label> Roxo </label>
                     <input type="checkbox">
-                </td>
+                </td>                
             </div>
+            <input type="submit" value="Enviar">
         </form>
     </tbody>
 </table>
