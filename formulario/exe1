@@ -1,17 +1,8 @@
 <html>
-package bean;
-import java.io.IOException;
-import java.io.PrintWriter;
-
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 <body>
 
 <form onsubmit="form">
-    <table border=1>
+    <table border="1" cellspacing="0">
         <div>
             <td>
                 <label> Campo de Seleção: </label>
@@ -41,7 +32,7 @@ import javax.servlet.http.HttpServletResponse;
             <td> 
                 <label> Lista de Cores </label>
             </td>
-            <td>
+            <td align="right">
                 <label> Vermelho </label>
                 <input type="checkbox">
                 <br>
@@ -69,7 +60,7 @@ import javax.servlet.http.HttpServletResponse;
                 <label> Roxo </label>
                 <input type="checkbox">
             </td>
-            <td>
+            <td align="right">
                 <label> Vermelho </label>
                 <input type="checkbox">
                 <br>
@@ -97,7 +88,7 @@ import javax.servlet.http.HttpServletResponse;
                 <label> Roxo </label>
                 <input type="checkbox">
             </td>
-            <td>
+            <td align="right">
                 <label> Vermelho </label>
                 <input type="checkbox">
                 <br>
@@ -125,7 +116,7 @@ import javax.servlet.http.HttpServletResponse;
                 <label> Roxo </label>
                 <input type="checkbox">
             </td>
-            <td>
+            <td align="right">
                 <label> Vermelho </label>
                 <input type="checkbox">
                 <br>
@@ -153,7 +144,7 @@ import javax.servlet.http.HttpServletResponse;
                 <label> Roxo </label>
                 <input type="checkbox">
             </td>
-            <td>
+            <td align="right">
                 <label> Vermelho </label>
                 <input type="checkbox">
                 <br>
