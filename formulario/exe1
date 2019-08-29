@@ -1,183 +1,190 @@
 <html>
+package bean;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 <body>
 
-<table border=1>
-    <tbody>
-        <form>
-            <div>
-                <td>
-                    <label> Campo de Seleção: </label>
-                </td>
-                <td>
-                    <label>São Paulo</label>
-                    <input type="checkbox">
-                </td>
-                <td
-                    <label>Rio de Janeiro</label>
-                    <input type="checkbox">
-                </td>
-                <td>
-                    <label>Belo Horizonte</label>
-                    <input type="checkbox">
-                </td>
-                <td>
-                    <label>Brasília</label>
-                    <input type="checkbox">
-                </td>
-                <td>
-                    <label>Manaus</label>
-                    <input type="checkbox">
-                </td>
-                <tr>
-                </tr>
-                <td> 
-                    <label> Lista de Cores </label>
-                </td>
-                <td>
-                    <label> Vermelho </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Verde </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Azul </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Amarelo </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Preto </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Branco </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Rosa </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Laranjado </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Roxo </label>
-                    <input type="checkbox">
-                </td>
-                <td>
-                    <label> Vermelho </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Verde </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Azul </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Amarelo </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Preto </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Branco </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Rosa </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Laranjado </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Roxo </label>
-                    <input type="checkbox">
-                </td>
-                <td>
-                    <label> Vermelho </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Verde </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Azul </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Amarelo </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Preto </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Branco </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Rosa </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Laranjado </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Roxo </label>
-                    <input type="checkbox">
-                </td>
-                <td>
-                    <label> Vermelho </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Verde </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Azul </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Amarelo </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Preto </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Branco </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Rosa </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Laranjado </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Roxo </label>
-                    <input type="checkbox">
-                </td>
-                <td>
-                    <label> Vermelho </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Verde </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Azul </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Amarelo </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Preto </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Branco </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Rosa </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Laranjado </label>
-                    <input type="checkbox">
-                    <br>
-                    <label> Roxo </label>
-                    <input type="checkbox">
-                </td>                
-            </div>
-            <input type="submit" value="Enviar">
-        </form>
-    </tbody>
-</table>
+<form onsubmit="form">
+    <table border=1>
+        <div>
+            <td>
+                <label> Campo de Seleção: </label>
+            </td>
+            <td>
+                <label>São Paulo</label>
+                <input type="checkbox" name="São Paulo" id="São Paulo">
+            </td>
+            <td
+                <label>Rio de Janeiro</label>
+                <input type="checkbox">
+            </td>
+            <td>
+                <label>Belo Horizonte</label>
+                <input type="checkbox">
+            </td>
+            <td>
+                <label>Brasília</label>
+                <input type="checkbox">
+            </td>
+            <td>
+                <label>Manaus</label>
+                <input type="checkbox">
+            </td>
+            <tr>
+            </tr>
+            <td> 
+                <label> Lista de Cores </label>
+            </td>
+            <td>
+                <label> Vermelho </label>
+                <input type="checkbox">
+                <br>
+                <label> Verde </label>
+                <input type="checkbox">
+                <br>
+                <label> Azul </label>
+                <input type="checkbox">
+                <br>
+                <label> Amarelo </label>
+                <input type="checkbox">
+                <br>
+                <label> Preto </label>
+                <input type="checkbox">
+                <br>
+                <label> Branco </label>
+                <input type="checkbox">
+                <br>
+                <label> Rosa </label>
+                <input type="checkbox">
+                <br>
+                <label> Laranjado </label>
+                <input type="checkbox">
+                <br>
+                <label> Roxo </label>
+                <input type="checkbox">
+            </td>
+            <td>
+                <label> Vermelho </label>
+                <input type="checkbox">
+                <br>
+                <label> Verde </label>
+                <input type="checkbox">
+                <br>
+                <label> Azul </label>
+                <input type="checkbox">
+                <br>
+                <label> Amarelo </label>
+                <input type="checkbox">
+                <br>
+                <label> Preto </label>
+                <input type="checkbox">
+                <br>
+                <label> Branco </label>
+                <input type="checkbox">
+                <br>
+                <label> Rosa </label>
+                <input type="checkbox">
+                <br>
+                <label> Laranjado </label>
+                <input type="checkbox">
+                <br>
+                <label> Roxo </label>
+                <input type="checkbox">
+            </td>
+            <td>
+                <label> Vermelho </label>
+                <input type="checkbox">
+                <br>
+                <label> Verde </label>
+                <input type="checkbox">
+                <br>
+                <label> Azul </label>
+                <input type="checkbox">
+                <br>
+                <label> Amarelo </label>
+                <input type="checkbox">
+                <br>
+                <label> Preto </label>
+                <input type="checkbox">
+                <br>
+                <label> Branco </label>
+                <input type="checkbox">
+                <br>
+                <label> Rosa </label>
+                <input type="checkbox">
+                <br>
+                <label> Laranjado </label>
+                <input type="checkbox">
+                <br>
+                <label> Roxo </label>
+                <input type="checkbox">
+            </td>
+            <td>
+                <label> Vermelho </label>
+                <input type="checkbox">
+                <br>
+                <label> Verde </label>
+                <input type="checkbox">
+                <br>
+                <label> Azul </label>
+                <input type="checkbox">
+                <br>
+                <label> Amarelo </label>
+                <input type="checkbox">
+                <br>
+                <label> Preto </label>
+                <input type="checkbox">
+                <br>
+                <label> Branco </label>
+                <input type="checkbox">
+                <br>
+                <label> Rosa </label>
+                <input type="checkbox">
+                <br>
+                <label> Laranjado </label>
+                <input type="checkbox">
+                <br>
+                <label> Roxo </label>
+                <input type="checkbox">
+            </td>
+            <td>
+                <label> Vermelho </label>
+                <input type="checkbox">
+                <br>
+                <label> Verde </label>
+                <input type="checkbox">
+                <br>
+                <label> Azul </label>
+                <input type="checkbox">
+                <br>
+                <label> Amarelo </label>
+                <input type="checkbox">
+                <br>
+                <label> Preto </label>
+                <input type="checkbox">
+                <br>
+                <label> Branco </label>
+                <input type="checkbox">
+                <br>
+                <label> Rosa </label>
+                <input type="checkbox">
+                <br>
+                <label> Laranjado </label>
+                <input type="checkbox">
+                <br>
+                <label> Roxo </label>
+                <input type="checkbox">
+            </td>                
+        </div>
+        <input type="submit" value="Enviar">
+    </table>
+</form>
 
 </body>
 </html>
